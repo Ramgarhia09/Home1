@@ -1,0 +1,299 @@
+.Elements {
+  width: 100%;
+  max-width: 1880px;
+  margin: 10px auto;
+  border-radius: 24px;
+  background-color: rgba(246, 248, 250, 1);
+  padding: 20px;
+  /* border: 3px solid rgb(34, 4, 4); */
+}
+
+.Elements h2 {
+  text-align: center;
+  font-weight: 500px;
+  font-size: 40px;
+  line-height: 52px;
+  margin-top: 40px;
+  color: rgba(26, 26, 26, 1);
+}
+
+.Elements p {
+  text-align: center;
+  font-size: 17px;
+  line-height: 32.3px;
+  color: rgba(26, 26, 26, 1);
+}
+
+/* Card list */
+.slick-list {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 40px;
+  background-color: rgba(246, 248, 250, 1);
+}
+
+/* Individual Card */
+.SEC1 {
+  width: 100%;
+  max-width: 447px;
+  background-color: #fff;
+  border: 1px solid rgba(233, 233, 233, 1);
+  border-radius: 16px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+}
+
+/* Sale badges */
+.sale,
+.sale2,
+.sale3,
+.sale4 {
+  width: 100px;
+  height: 33px;
+  border-radius: 33px;
+  background-color: rgba(31, 75, 67, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 33px;
+  left: 20px;
+  z-index: 2;
+}
+
+.sale4 {
+  left: 125px;
+  background-color: rgba(231, 200, 115, 1);
+}
+
+.sale p,
+.sale2 p,
+.sale3 p,
+.sale4 p {
+  color: white;
+  margin: 0;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.sale4 p {
+  color: rgba(26, 26, 26, 1);
+}
+
+.SEC1 img {
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+}
+
+.title-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.title-text {
+  font-weight: 500;
+  font-size: 19px;
+  color: #1a1a1a;
+}
+
+.price {
+  font-weight: 600;
+  font-size: 21px;
+  color: rgba(235, 102, 78, 1);
+}
+
+.property-location {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: #555;
+}
+
+.property-location img {
+  width: 20px;
+  height: 20px;
+}
+
+.property-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.meta-item,
+.meta-item1,
+.meta-item2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 8px;
+  border-right: 1px solid rgba(233, 233, 233, 1);
+  padding-right: 10px;
+  flex: 8;
+}
+
+.meta-item img,
+.meta-item1 img,
+.meta-item2 img {
+  width: 20px;
+  height: 20px;
+}
+
+.meta-item span,
+.meta-item1 span,
+.meta-item2 span {
+  font-size: 16px;
+  color: #333;
+}
+
+/* Dot Pagination */
+.TabList {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  max-width: 1330px;
+  height: 60px;
+  margin: 30px auto 0;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background-color: #999;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.dot-active {
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  border: 1px solid rgba(18, 34, 35, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inner-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: black;
+}
+
+
+/* ---------------------- LARGE DEVICES (1200px - 1880px) ---------------------- */
+@media (max-width: 1600px) {
+  .Elements {
+    max-width: 1400px;
+    padding: 15px;
+  }
+  .SEC1 {
+    max-width: 400px;
+  }
+  .Elements h2 {
+    font-size: 36px;
+    line-height: 48px;
+  }
+  .Elements p {
+    font-size: 16px;
+    line-height: 30px;
+  }
+}
+
+/* ---------------------- MEDIUM DEVICES (768px - 1200px) ---------------------- */
+@media (max-width: 1200px) {
+  .Elements {
+    max-width: 1000px;
+    padding: 15px;
+  }
+  .slick-list {
+    justify-content: space-evenly;
+  }
+  .SEC1 {
+    max-width: 45%; /* Two cards per row */
+  }
+  .Elements h2 {
+    font-size: 32px;
+    line-height: 44px;
+  }
+  .Elements p {
+    font-size: 15px;
+    line-height: 28px;
+  }
+}
+
+/* ---------------------- SMALL DEVICES (480px - 768px) ---------------------- */
+@media (max-width: 768px) {
+  .Elements {
+    max-width: 90%;
+    padding: 10px;
+  }
+  .slick-list {
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+  }
+  .SEC1 {
+    max-width: 100%; /* One card per row */
+  }
+  .Elements h2 {
+    font-size: 28px;
+    line-height: 38px;
+  }
+  .Elements p {
+    font-size: 14px;
+    line-height: 26px;
+  }
+  .title-price {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+}
+
+/* ---------------------- EXTRA SMALL DEVICES (below 480px) ---------------------- */
+@media (max-width: 480px) {
+  .Elements {
+    max-width: 95%;
+    padding: 8px;
+  }
+  .slick-list {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .SEC1 {
+    max-width: 100%;
+  }
+  .Elements h2 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .Elements p {
+    font-size: 13px;
+    line-height: 22px;
+  }
+  .price {
+    font-size: 18px;
+  }
+  .property-meta {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 8px;
+  }
+}
+

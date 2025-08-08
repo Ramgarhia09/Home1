@@ -1,0 +1,153 @@
+.why-Choose-Us {
+  padding: 60px 20px;
+  background-color: rgba(231, 200, 115, 1);
+  border-radius: 24px;
+  text-align: center;
+  width: 1880px;
+     margin: 0 auto;
+}
+
+
+
+.content-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.why-Choose-Us h2 {
+  font-size: 36px;
+  font-weight: 600px;
+  margin-bottom: 10px;
+  color: #1a1a1a;
+}
+
+.why-Choose-Us p {
+  font-size: 17px;
+  margin-bottom: 40px;
+  color: #1a1a1a;
+}
+
+.features {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.feature-box {
+  padding: 20px;
+  flex: 1 1 calc(50% - 30px);
+  max-width: 260px;
+  text-align: center;
+}
+
+.feature-box img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 15px;
+}
+
+.feature-box h3 {
+  font-size: 18px;
+  font-weight: 500px;
+  margin-bottom: 10px;
+  color: #1a1a1a;
+}
+
+.feature-box .choose {
+  /* width: 286px;
+  height: 57px; */
+  font-weight: 400px;
+  line-height: 28.5px;
+  font-size: 15px;
+  color: #1a1a1a;
+ 
+
+}
+
+/* ---------------------- LARGE DEVICES (1200px - 1600px) ---------------------- */
+@media (max-width: 1600px) {
+  .why-Choose-Us {
+    max-width: 1400px;
+    padding: 50px 20px;
+  }
+  .why-Choose-Us h2 {
+    font-size: 32px;
+  }
+  .why-Choose-Us p {
+    font-size: 16px;
+  }
+  .feature-box {
+    max-width: 220px;
+  }
+}
+
+/* ---------------------- MEDIUM DEVICES (768px - 1200px) ---------------------- */
+@media (max-width: 1200px) {
+  .why-Choose-Us {
+    max-width: 1000px;
+    padding: 40px 15px;
+  }
+  .features {
+    justify-content: center;
+    gap: 20px;
+  }
+  .feature-box {
+    flex: 1 1 calc(50% - 20px); /* Two per row */
+    max-width: 45%;
+  }
+  .why-Choose-Us h2 {
+    font-size: 28px;
+  }
+  .why-Choose-Us p {
+    font-size: 15px;
+    margin-bottom: 30px;
+  }
+}
+
+/* ---------------------- SMALL DEVICES (480px - 768px) ---------------------- */
+@media (max-width: 768px) {
+  .why-Choose-Us {
+    max-width: 90%;
+    padding: 30px 10px;
+  }
+  .features {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .feature-box {
+    flex: 1 1 100%;
+    max-width: 100%;
+    padding: 15px;
+  }
+  .why-Choose-Us h2 {
+    font-size: 24px;
+  }
+  .why-Choose-Us p {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+}
+
+/* ---------------------- EXTRA SMALL DEVICES (below 480px) ---------------------- */
+@media (max-width: 480px) {
+  .why-Choose-Us {
+    max-width: 95%;
+    padding: 20px 8px;
+  }
+  .features {
+    gap: 15px;
+  }
+  .feature-box img {
+    width: 40px;
+    height: 40px;
+  }
+  .feature-box h3 {
+    font-size: 16px;
+  }
+  .feature-box .choose {
+    font-size: 13px;
+    line-height: 22px;
+  }
+}

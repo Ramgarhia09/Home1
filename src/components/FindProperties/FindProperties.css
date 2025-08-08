@@ -1,0 +1,210 @@
+.FindProp {
+  width: 100%;
+  padding: 60px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.FindProp h2 {
+  font-weight: 500px;
+  font-size: 40px;
+  line-height: 52px;
+  color: rgba(26, 26, 26, 1);
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.FindProp p {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 32.3px;
+  color: rgba(26, 26, 26, 1);
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* Card Container */
+.card-wrapper {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Top and Bottom Rows */
+.card-row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+/* Common Card Styles */
+.card {
+  height: 395px;
+  border-radius: 16px;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  flex-shrink: 0;
+  display: flex;
+  align-items: flex-end;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  position: relative;
+}
+
+/* Overlay Text */
+
+
+
+/* Top Row Cards */
+.card1 {
+  width: 47%;
+  background-image: url('22.png');
+}
+
+.card2,
+.card3 {
+  width: 23.5%;
+}
+
+.card2 {
+  background-image: url('23.svg');
+}
+.card3 {
+  background-image: url('24.svg');
+}
+
+/* Bottom Row Cards */
+.card4,
+.card5 {
+  width: 23.5%;
+}
+
+.card4 {
+  background-image: url('25.svg');
+}
+.card5 {
+  background-image: url('26.svg');
+}
+
+.card6 {
+  width: 47%;
+  background-image: url('27.svg');
+}
+
+
+
+
+
+/* ---------------------- LARGE DEVICES (1200px - 1600px) ---------------------- */
+@media (max-width: 1600px) {
+  .card-wrapper {
+    max-width: 1200px;
+  }
+  .card1,
+  .card6 {
+    width: 46%;
+  }
+  .card2,
+  .card3,
+  .card4,
+  .card5 {
+    width: 23%;
+  }
+  .FindProp h2 {
+    font-size: 36px;
+    line-height: 48px;
+  }
+  .FindProp p {
+    font-size: 16px;
+    line-height: 30px;
+  }
+}
+
+/* ---------------------- MEDIUM DEVICES (768px - 1200px) ---------------------- */
+@media (max-width: 1200px) {
+  .card-wrapper {
+    max-width: 1000px;
+    padding: 0 15px;
+  }
+  .card-row {
+    justify-content: space-evenly;
+  }
+  /* Cards become 2 per row */
+  .card1,
+  .card2,
+  .card3,
+  .card4,
+  .card5,
+  .card6 {
+    width: 48%;
+  }
+  .FindProp h2 {
+    font-size: 32px;
+    line-height: 44px;
+  }
+  .FindProp p {
+    font-size: 15px;
+    line-height: 28px;
+  }
+}
+
+/* ---------------------- SMALL DEVICES (480px - 768px) ---------------------- */
+@media (max-width: 768px) {
+  .card-wrapper {
+    max-width: 90%;
+    padding: 0 10px;
+  }
+  .card-row {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  /* Each card takes full width */
+  .card1,
+  .card2,
+  .card3,
+  .card4,
+  .card5,
+  .card6 {
+    width: 100%;
+    height: 300px;
+  }
+  .FindProp h2 {
+    font-size: 28px;
+    line-height: 38px;
+  }
+  .FindProp p {
+    font-size: 14px;
+    line-height: 26px;
+  }
+}
+
+/* ---------------------- EXTRA SMALL DEVICES (below 480px) ---------------------- */
+@media (max-width: 480px) {
+  .card-wrapper {
+    max-width: 95%;
+    padding: 0 8px;
+  }
+  .card1,
+  .card2,
+  .card3,
+  .card4,
+  .card5,
+  .card6 {
+    width: 100%;
+    height: 250px;
+  }
+  .FindProp h2 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .FindProp p {
+    font-size: 13px;
+    line-height: 22px;
+  }
+}
