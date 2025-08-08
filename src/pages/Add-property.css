@@ -105,7 +105,7 @@
 }
 
 .input {
-  width: 120%;
+  width: 100%;
   padding: 8px 12px;
   border: 1px solid #ccc;
   border-radius: 6px;
@@ -150,3 +150,4 @@
   font-style: italic;
 
 }
+
