@@ -1,5 +1,5 @@
 import React from 'react'
-import './WhyChooseUS.css'
+import './WhyChooseUs.css'
 
 const WhyChooseUs = () => {
   return (
@@ -40,3 +40,4 @@ properties</p>
 }
 
 export default WhyChooseUs
+
