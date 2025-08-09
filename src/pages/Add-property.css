@@ -120,6 +120,8 @@ textarea {
   font-size: 12px;
   color: #6c7a89;
   margin-top: 5px;
+    font-style: italic;
+
 }
 
 /* ===== Buttons ===== */
@@ -150,3 +152,4 @@ textarea {
 .button-secondary:hover {
   background: #f4f6f8;
 }
+
